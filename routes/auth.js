@@ -12,7 +12,7 @@ router.post('/login', async (req, res) => {
 
   try {
     const [rows] = await db.query(
-      'SELECT * FROM usuarios WHERE usuario = ? AND contraseña = ?',
+      'SELECT * FROM usuarios WHERE usuario = ? AND contrasenia = ?',
       [usuario, contraseña]
     );
 
